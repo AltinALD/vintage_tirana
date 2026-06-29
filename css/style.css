@@ -1,5 +1,5 @@
 /* ============================================
-   MA MONTRE — Luxury Watch Store
+   Bigotti Watches Official — Bigotti Milano
    ============================================ */
 
 :root {
@@ -527,7 +527,7 @@ ul { list-style: none; }
 
 .brands__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -763,8 +763,8 @@ a.contact__item:hover .contact__item-value {
   color: rgba(142, 146, 151, 0.5);
 }
 
-/* ---- WhatsApp Float ---- */
-.whatsapp-float {
+/* ---- Instagram Float ---- */
+.instagram-float {
   position: fixed;
   bottom: 28px;
   right: 28px;
@@ -772,18 +772,18 @@ a.contact__item:hover .contact__item-value {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #25d366;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 4px 24px rgba(220, 39, 67, 0.35);
   transition: transform 0.3s var(--ease), box-shadow 0.3s;
 }
 
-.whatsapp-float:hover {
+.instagram-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 8px 32px rgba(220, 39, 67, 0.5);
 }
 
 /* ---- Reveal animations ---- */
@@ -907,7 +907,7 @@ a.contact__item:hover .contact__item-value {
     padding: 32px 24px;
   }
 
-  .whatsapp-float {
+  .instagram-float {
     bottom: 20px;
     right: 20px;
     width: 50px;
