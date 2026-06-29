@@ -638,6 +638,12 @@ ul { list-style: none; }
   color: var(--silver);
 }
 
+.about__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 /* ---- Contact ---- */
 .contact {
   background: var(--charcoal);
