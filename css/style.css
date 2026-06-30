@@ -1,5 +1,5 @@
 /* ============================================
-   Vintage Store Tirana — Ora dhe Aksesore
+   Ardi Watches — Jewelry & Watches
    ============================================ */
 
 :root {
@@ -117,8 +117,9 @@ ul { list-style: none; }
 }
 
 .header__logo img {
-  height: 36px;
-  width: auto;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
 .nav {
@@ -351,6 +352,52 @@ ul { list-style: none; }
   50% { opacity: 1; transform: scaleY(1); }
 }
 
+/* ---- Stats ---- */
+.stats {
+  padding: 48px 0;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.08);
+  background: var(--charcoal);
+}
+
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stats__item strong {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+.stats__item span {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--silver);
+}
+
+.stats__item--link {
+  transition: transform 0.3s var(--ease);
+}
+
+.stats__item--link:hover {
+  transform: translateY(-2px);
+}
+
+.stats__item--link:hover strong {
+  color: var(--gold);
+}
+
 /* ---- Marquee ---- */
 .marquee {
   overflow: hidden;
@@ -566,6 +613,15 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 
+.brand-card--featured {
+  border-color: rgba(201, 168, 76, 0.35);
+  background: linear-gradient(145deg, rgba(201, 168, 76, 0.08), var(--black));
+}
+
+.brand-card--featured:hover {
+  border-color: var(--gold-light);
+}
+
 /* ---- About ---- */
 .about__grid {
   display: grid;
@@ -728,8 +784,10 @@ a.contact__item:hover .contact__item-value {
 }
 
 .footer__logo {
-  height: 32px;
+  height: 48px;
+  width: 48px;
   margin: 0 auto 12px;
+  border-radius: 50%;
 }
 
 .footer__tagline {
@@ -839,6 +897,11 @@ a.contact__item:hover .contact__item-value {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
   }
 
   .nav {
